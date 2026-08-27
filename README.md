@@ -25,17 +25,10 @@ The original correlation was population density appearing on both sides of the c
 ## What's in this repo
 
 ```
-Code/
-  01_RSRP_Data_Preparation.ipynb          Validation and cleaning of the RSRP feed
-  02_TrafficVolume_Data_Preparation.ipynb Validation and cleaning of the traffic feed
-  03_Dashboard_Extracts.ipynb             Aggregation into the dashboard's extract layer
-  04_Forecasting_and_Impact.ipynb         SARIMA / Prophet forecasting, fixed-effects models
-  html_gen_data.py                        Builds the embedded data payload
-  html_build.py                           Assembles the self-contained dashboard
 images/                                   Dashboard screenshots
 ```
 
-The raw datasets are **not** included — see [Data](#data) below.
+The raw datasets are **not** included
 
 ---
 
@@ -85,20 +78,6 @@ Four pages, twenty linked views, delivered as a **single self-contained HTML fil
 
 Every filter is live: switching which operator you benchmark re-frames all twenty views, the date range re-slices weekend against weekday, and both data-treatment switches recompute the affected charts. Every chart has a table view behind it. Light and dark themes.
 
----
-
-## Data
-
-The underlying datasets are not redistributed here. The pipeline expects two inputs:
-
-| File | Rows | Key fields |
-|---|---|---|
-| `RSRP.csv` | 2,725,353 | timestamp (with UTC offset), lat/lon, operator, RSRP, radio generation, connection type, data-enabled flag, device name |
-| `TrafficVolume.csv` | 138,469 | timestamp, lat/lon, operator, downlink MB, uplink MB, radio generation |
-
-Scope of the validated slice: RSRP within [−140, −40] dBm · `RadioConnectionType = Mobile` · `RadioMobileDataEnabled = Enabled` · `RadioNetworkGeneration = 4G` · coordinates inside the Riyadh bounding box · complete days 2–4 Nov 2019, timestamps honoured at UTC+03:00.
-
----
 
 ## Limitations, stated up front
 
