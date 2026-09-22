@@ -104,4 +104,4 @@ Every filter is live: switching which operator you benchmark re-frames all twent
 
 ---
 
-Built by **Mohamed Ellaithy**. Questions and corrections welcome — open an issue.
+Built by **Mohamed Ellithy**. Questions and corrections welcome — open an issue.
