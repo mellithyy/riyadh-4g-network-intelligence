@@ -1059,7 +1059,7 @@ function computeMetrics(){
   });
   // grid leadership — a cell is "contested" for operator o when o and at least one rival both have data there
   OPS.forEach(o=>{
-    const cells = DD.gap_cells.filter(c=>c[o]!=null && OPS.some(x=>x!==o && c[x]!=null));
+    const cells = DD.gap_cells.filter(fairCell);   // as the map caption and the README say: every operator has 150+ samples in the cell
     let lead=0, sum=0;
     cells.forEach(c=>{ const best=Math.max(...OPS.filter(x=>x!==o&&c[x]!=null).map(x=>c[x]));
       if(c[o]>best) lead++; sum += c[o]-best; });
@@ -1156,8 +1156,10 @@ function drawBanSpark(){
    4. PAGE 1 — COMPETITIVE GAP MAP
    ============================================================ */
 let gapMap;
+// a cell is scored only when every operator has at least 150 samples there (the caption and the README rule): 306 cells
+function fairCell(c){ return OPS.every(x=>c[x]!=null && c['n'+x]>=150); }
 function gapData(){
-  return DD.gap_cells.filter(c=>c[HOME]!=null).map(c=>{
+  return DD.gap_cells.filter(fairCell).map(c=>{
     const rv = rivalsOf(HOME).filter(x=>c[x]!=null);
     if(!rv.length) return null;
     const best = rv.reduce((a,b)=> c[a]>=c[b]?a:b);
