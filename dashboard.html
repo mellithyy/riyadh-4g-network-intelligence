@@ -14,10 +14,10 @@
 <meta property="og:image:height" content="627">
 <meta property="og:image:alt" content="Riyadh 4G Network Intelligence dashboard preview">
 <meta name="twitter:card" content="summary_large_image">
-<title>Riyadh 4G Crowdsourced Network Intelligence — Dashboard</title>
+<title>Riyadh 4G Crowdsourced Network Intelligence | Dashboard</title>
 <style>
 /* ============================================================
-   DESIGN TOKENS — light + dark, one place to swap for a brand
+   DESIGN TOKENS: light + dark, one place to swap for a brand
    ============================================================ */
 :root{
   color-scheme: light;
@@ -252,7 +252,7 @@ html{-webkit-text-size-adjust:100%}
 .g32>.card:first-child{display:flex;flex-direction:column}
 .g32>.card:first-child .notestrip{margin-top:auto}
 /* ============================================================
-   MOBILE  — single column, scrollable tabs, touch-sized controls
+   MOBILE: single column, scrollable tabs, touch-sized controls
    ============================================================ */
 @media(max-width:820px){
   .wrap,main{padding-left:12px;padding-right:12px}
@@ -352,7 +352,7 @@ html{-webkit-text-size-adjust:100%}
 <section class="page active" id="p1">
   <div class="pagehead">
     <h2>Network Health Command Center</h2>
-    <p>Where <b id="hoName1">Operator A</b> stands against the other two networks in Riyadh, on <b id="sliceRows">2.06M</b> crowdsourced LTE measurements from real handsets. Showing <b id="sliceLabel">Full window &middot; 2&ndash;4 Nov 2019</b> &mdash; every chart on all four pages follows the filter row above.</p>
+    <p>Where <b id="hoName1">Operator A</b> stands against the other two networks in Riyadh, on <b id="sliceRows">2.06M</b> crowdsourced LTE measurements from real handsets. Showing <b id="sliceLabel">Full window &middot; 2&ndash;4 Nov 2019</b>: every chart on all four pages follows the filter row above.</p>
   </div>
 
   <div class="grid g4">
@@ -400,7 +400,7 @@ html{-webkit-text-size-adjust:100%}
     <div class="card">
       <div class="card-head">
         <div>
-          <h3>Competitive coverage gap &mdash; where we win and where we lose</h3>
+          <h3>Competitive coverage gap: where we win and where we lose</h3>
           <div class="sub">1&nbsp;km grid. Colour = <span id="gapOpLab">Operator A</span> mean RSRP minus the <em>best</em> rival in the same cell. Only cells with &ge;150 samples per operator are scored.</div>
         </div>
         <div class="card-tools"><button class="tbtn" data-table="tblGap">Table</button></div>
@@ -423,7 +423,7 @@ html{-webkit-text-size-adjust:100%}
     <div>
       <div class="card">
         <div class="card-head">
-          <div><h3>Coverage quality mix</h3><div class="sub">Share of samples per RSRP band. Ordered blue ramp &mdash; darkest is best.</div></div>
+          <div><h3>Coverage quality mix</h3><div class="sub">Share of samples per RSRP band. Ordered blue ramp: darkest is best.</div></div>
           <div class="card-tools"><button class="tbtn" data-table="tblBands">Table</button></div>
         </div>
         <div class="chart" id="bandChart"></div>
@@ -437,7 +437,7 @@ html{-webkit-text-size-adjust:100%}
         </div>
         <div class="chart" id="histChart"></div>
         <div class="legend" id="histLegend"></div>
-        <div class="notestrip">The three spikes in the Operator A curve are <b>not coverage features</b> — they are one handset model reporting three fixed values. See <i>Measurement integrity</i> on the Device &amp; Data Quality page.</div>
+        <div class="notestrip">The three spikes in the Operator A curve are <b>not coverage features</b>: they are one handset model reporting three fixed values. See <i>Measurement integrity</i> on the Device &amp; Data Quality page.</div>
       </div>
     </div>
   </div>
@@ -454,7 +454,7 @@ html{-webkit-text-size-adjust:100%}
   <div class="grid g2 top" style="margin-top:16px">
     <div class="card">
       <div class="card-head">
-        <div><h3>Demand by hour of day</h3><div class="sub">Measurement volume &mdash; a proxy for active users on each network.</div></div>
+        <div><h3>Demand by hour of day</h3><div class="sub">Measurement volume: a proxy for active users on each network.</div></div>
         
       </div>
       <div class="chart" id="hourVolChart"></div>
@@ -463,7 +463,7 @@ html{-webkit-text-size-adjust:100%}
     </div>
     <div class="card">
       <div class="card-head">
-        <div><h3>Coverage by hour of day</h3><div class="sub">Mean RSRP per hour. Watch the busy-hour dip &mdash; that is load, not geography.</div></div>
+        <div><h3>Coverage by hour of day</h3><div class="sub">Mean RSRP per hour. Watch the busy-hour dip: that is load, not geography.</div></div>
         <div class="card-tools"><button class="tbtn" data-table="tblHour">Table</button></div>
       </div>
       <div class="chart" id="hourRsrpChart"></div>
@@ -474,7 +474,7 @@ html{-webkit-text-size-adjust:100%}
 
   <div class="card" style="margin-top:16px">
     <div class="card-head">
-      <div><h3>Action list &mdash; the 8 cells to fix first</h3><div class="sub">Ranked by measured RSRP deficit &times; sample volume: worst coverage where the most users actually are.</div></div>
+      <div><h3>Action list: the 8 cells to fix first</h3><div class="sub">Ranked by measured RSRP deficit &times; sample volume: worst coverage where the most users actually are.</div></div>
       
     </div>
     <div class="tableview on" id="tblAction" style="max-height:none"></div>
@@ -493,7 +493,7 @@ html{-webkit-text-size-adjust:100%}
       <div class="card-head">
         <div>
           <h3>1 &middot; User density through the day</h3>
-          <div class="sub">500&nbsp;m grid, all operators. Press play to watch Riyadh wake up, commute, and go out at night. Deliberately not artefact-corrected &mdash; a handset that mis-reports signal is still a real person in a real place.</div>
+          <div class="sub">500&nbsp;m grid, all operators. Press play to watch Riyadh wake up, commute, and go out at night. Deliberately not artefact-corrected: a handset that mis-reports signal is still a real person in a real place.</div>
         </div>
         <div class="card-tools"><button class="tbtn" data-table="tblDensity">Table</button></div>
       </div>
@@ -574,7 +574,7 @@ html{-webkit-text-size-adjust:100%}
         <div class="maplegend">
           <div class="title">Downlink volume</div>
           <div id="bubSizeLegend" style="display:flex;align-items:flex-end;gap:10px;height:44px;margin:4px 0 2px"></div>
-          <div style="margin-top:4px;font-size:10.5px">Overlap is intentional &mdash; it shows contested ground</div>
+          <div style="margin-top:4px;font-size:10.5px">Overlap is intentional: it shows contested ground</div>
         </div>
         <div class="mapscale"><span class="scalebar" id="bubScaleBar"></span><span id="bubScaleTxt">2 km</span></div>
         <div class="mapnote" id="bubNote"></div>
@@ -599,7 +599,7 @@ html{-webkit-text-size-adjust:100%}
       <div class="card-head">
         <div>
           <h3>4 &middot; RSRP by handset model and operator</h3>
-          <div class="sub">Bars are each model's raw average per network. <b>They are not a like-for-like network comparison</b> &mdash; the operators rarely measured the same phone in the same places. Rows tagged <b>&#9673;&nbsp;comparable</b> have at least one 1&nbsp;km cell where two operators both recorded that model with &ge;20 readings; only those support a network claim, and the note below uses only them.</div>
+          <div class="sub">Bars are each model's raw average per network. <b>They are not a like-for-like network comparison</b>: the operators rarely measured the same phone in the same places. Rows tagged <b>&#9673;&nbsp;comparable</b> have at least one 1&nbsp;km cell where two operators both recorded that model with &ge;20 readings; only those support a network claim, and the note below uses only them.</div>
         </div>
         <div class="card-tools"><button class="tbtn" data-table="tblDev">Table</button></div>
       </div>
@@ -630,7 +630,7 @@ html{-webkit-text-size-adjust:100%}
 <section class="page" id="p3">
   <div class="pagehead">
     <h2>Device, Traffic &amp; Data Quality Intelligence</h2>
-    <p>The supporting evidence: which handsets drag the network down, where the money is being carried, whether coverage actually converts into traffic &mdash; and exactly how much of the raw feed had to be thrown away to say any of it.</p>
+    <p>The supporting evidence: which handsets drag the network down, where the money is being carried, whether coverage actually converts into traffic, and exactly how much of the raw feed had to be thrown away to say any of it.</p>
   </div>
 
   <p class="sectionlab">Does coverage convert into traffic?</p>
@@ -667,7 +667,7 @@ html{-webkit-text-size-adjust:100%}
     </div>
     <div class="card">
       <div class="card-head">
-        <div><h3>Model &times; operator RSRP matrix</h3><div class="sub">Mean RSRP per model on each network. The &Delta; column is the raw spread across the row &mdash; treat it as a prompt to investigate, not a verdict: unless both operators measured that phone in the same places, most of the spread is geography. The note below quotes only comparisons that survive location matching.</div></div>
+        <div><h3>Model &times; operator RSRP matrix</h3><div class="sub">Mean RSRP per model on each network. The &Delta; column is the raw spread across the row: treat it as a prompt to investigate, not a verdict: unless both operators measured that phone in the same places, most of the spread is geography. The note below quotes only comparisons that survive location matching.</div></div>
         <div class="card-tools"><button class="tbtn" data-table="tblMatrix">Table</button></div>
       </div>
       <div class="chart" id="matrixChart"></div>
@@ -694,7 +694,7 @@ html{-webkit-text-size-adjust:100%}
     </div>
     <div class="card">
       <div class="card-head">
-        <div><h3>Downlink : uplink asymmetry</h3><div class="sub">Median per-sample ratio &mdash; robust to the outliers that distort the totals.</div></div>
+        <div><h3>Downlink : uplink asymmetry</h3><div class="sub">Median per-sample ratio: robust to the outliers that distort the totals.</div></div>
         
       </div>
       <div class="chart" id="dlulChart"></div>
@@ -703,11 +703,11 @@ html{-webkit-text-size-adjust:100%}
   </div>
 
   <div class="divider"></div>
-  <p class="sectionlab">Measurement integrity &mdash; two defects that change the ranking</p>
+  <p class="sectionlab">Measurement integrity: two defects that change the ranking</p>
   <div class="grid g2 top">
     <div class="card">
       <div class="card-head">
-        <div><h3>Handsets that don't really measure</h3><div class="sub">Share of a model's samples that fall on just its three most common RSRP values. A well-behaved handset spreads across 40&ndash;80 distinct values; anything above the 40% line is reporting a lookup, not a measurement. Always shown uncorrected &mdash; this panel <em>is</em> the evidence for the correction.</div></div>
+        <div><h3>Handsets that don't really measure</h3><div class="sub">Share of a model's samples that fall on just its three most common RSRP values. A well-behaved handset spreads across 40&ndash;80 distinct values; anything above the 40% line is reporting a lookup, not a measurement. Always shown uncorrected: this panel <em>is</em> the evidence for the correction.</div></div>
         <div class="card-tools"><button class="tbtn" data-table="tblQuant">Table</button></div>
       </div>
       <div class="chart" id="quantChart"></div>
@@ -716,24 +716,24 @@ html{-webkit-text-size-adjust:100%}
     </div>
     <div class="card">
       <div class="card-head">
-        <div><h3>The same measurement, counted twice</h3><div class="sub">Rows sharing an identical timestamp, position, operator and RSRP but carrying different <code>DeviceName</code> values. Measured once across the full window &mdash; this panel does not follow the date filter.</div></div>
+        <div><h3>The same measurement, counted twice</h3><div class="sub">Rows sharing an identical timestamp, position, operator and RSRP but carrying different <code>DeviceName</code> values. Measured once across the full window: this panel does not follow the date filter.</div></div>
         
       </div>
       <div class="chart" id="dupeChart"></div>
-      <div class="insight crit"><div class="ic">!</div><p><b>7.5% of validated RSRP rows are duplicates</b> produced by the collection SDK's device lookup resolving one hardware identifier to several commercial names. <code>Galaxy J7 Prime</code> and <code>Galaxy On Nxt</code> are the same phone (33,404 duplicated groups); so are <code>Mi 9T</code> / <code>Redmi K20</code> and four Huawei/Honor rebadges. Left uncorrected this inflates per-model sample counts, so the "minimum users" slider on the handset chart admits models that do not have that many measurements &mdash; and it double-weights those locations in every spatial average.</p></div>
+      <div class="insight crit"><div class="ic">!</div><p><b>7.5% of validated RSRP rows are duplicates</b> produced by the collection SDK's device lookup resolving one hardware identifier to several commercial names. <code>Galaxy J7 Prime</code> and <code>Galaxy On Nxt</code> are the same phone (33,404 duplicated groups); so are <code>Mi 9T</code> / <code>Redmi K20</code> and four Huawei/Honor rebadges. Left uncorrected this inflates per-model sample counts, so the "minimum users" slider on the handset chart admits models that do not have that many measurements, and it double-weights those locations in every spatial average.</p></div>
     </div>
   </div>
 
   <div class="divider"></div>
-  <p class="sectionlab">Data quality &mdash; what we removed and why it matters</p>
+  <p class="sectionlab">Data quality: what we removed and why it matters</p>
   <div class="grid g23 top">
     <div class="card">
       <div class="card-head">
-        <div><h3>Validation funnel &mdash; RSRP feed</h3><div class="sub">2.73M raw rows in, 1.98M analysable rows out. Describes the whole feed, so it does not follow the date filter.</div></div>
+        <div><h3>Validation funnel: RSRP feed</h3><div class="sub">2.73M raw rows in, 1.98M analysable rows out. Describes the whole feed, so it does not follow the date filter.</div></div>
         
       </div>
       <div id="funnel" style="margin-top:12px"></div>
-      <div class="insight crit"><div class="ic">!</div><p><b>23.6% of raw RSRP rows carry the value 2,147,483,647</b> &mdash; signed 32-bit integer maximum, the handset SDK's "no LTE measurement available" sentinel. It is present in 96&ndash;100% of 2G/3G/Unknown rows, which is exactly what you would expect for an LTE-only KPI. Treating it as a number would have pushed the fleet average to <b>+507,217,200 dBm</b>.</p></div>
+      <div class="insight crit"><div class="ic">!</div><p><b>23.6% of raw RSRP rows carry the value 2,147,483,647</b>: signed 32-bit integer maximum, the handset SDK's "no LTE measurement available" sentinel. It is present in 96&ndash;100% of 2G/3G/Unknown rows, which is exactly what you would expect for an LTE-only KPI. Treating it as a number would have pushed the fleet average to <b>+507,217,200 dBm</b>.</p></div>
     </div>
     <div style="display:flex;flex-direction:column">
       <div class="card" style="flex:1">
@@ -749,7 +749,7 @@ html{-webkit-text-size-adjust:100%}
         </div>
         <div class="chart" id="outlierChart"></div>
         <div class="legend" id="outlierLegend"></div>
-        <div class="insight crit"><div class="ic">!</div><p><b>14 rows inflate Operator B's downlink by 4.1&times;.</b> Each claims ~104,000 MB inside a single 15-minute bin &mdash; about 925 Mbps sustained, implausible for a handset and clustered suspiciously tightly around one value. Left in, they would have made B look like the traffic leader; removed, B carries less downlink than A.</p></div>
+        <div class="insight crit"><div class="ic">!</div><p><b>14 rows inflate Operator B's downlink by 4.1&times;.</b> Each claims ~104,000 MB inside a single 15-minute bin: about 925 Mbps sustained, implausible for a handset and clustered suspiciously tightly around one value. Left in, they would have made B look like the traffic leader; removed, B carries less downlink than A.</p></div>
       </div>
     </div>
   </div>
@@ -771,13 +771,13 @@ html{-webkit-text-size-adjust:100%}
   <div class="grid g4" id="p4bans"></div>
 
   <div class="divider"></div>
-  <p class="sectionlab">Next 24 hours &mdash; traffic forecast</p>
+  <p class="sectionlab">Next 24 hours: traffic forecast</p>
   <div class="grid g23 top">
     <div class="card">
       <div class="card-head"><div>
         <h3>Observed 72 hours, forecast next 24</h3>
         <div class="sub">SARIMA(1,0,0)(1,0,0,24) on log traffic, fitted per operator and direction. Shaded band is the
-          80% prediction interval &mdash; it is wide on purpose.</div></div></div>
+          80% prediction interval: it is wide on purpose.</div></div></div>
       <div class="chart" id="fcChart"></div>
       <div class="legend" id="fcLegend"></div>
       <div class="insight info" id="fcInsight"><div class="ic">i</div><p></p></div>
@@ -796,12 +796,12 @@ html{-webkit-text-size-adjust:100%}
     <div class="card">
       <div class="card-head"><div><h3>Coverage-uplift effect, measured within cells</h3>
         <div class="sub">Elasticity of traffic to RSRP, estimated with cell and hour fixed effects so the comparison is
-          the same place at the same time of day &mdash; not one neighbourhood against another.</div></div></div>
+          the same place at the same time of day, not one neighbourhood against another.</div></div></div>
       <div class="tableview on" id="tblEff" style="max-height:none"></div>
       <div class="insight crit" id="effInsight"><div class="ic">!</div><p></p></div>
     </div>
     <div class="card">
-      <div class="card-head"><div><h3>Scenario &mdash; lift the study area to the best operator's signal</h3>
+      <div class="card-head"><div><h3>Scenario: lift the study area to the best operator's signal</h3>
         <div class="sub">Applying the measured elasticity to the RSRP gap each operator would have to close.</div></div></div>
       <div class="chart" id="scenChart"></div>
       <div class="tableview on" id="tblScen" style="max-height:none"></div>
@@ -819,7 +819,7 @@ html{-webkit-text-size-adjust:100%}
   Validated slice = RSRP within [&minus;140, &minus;40] dBm &middot; RadioConnectionType = Mobile &middot; RadioMobileDataEnabled = Enabled &middot; RadioNetworkGeneration = 4G.
   Spatial aggregation uses equal-degree bins of 2 km, 1 km and 500 m, identical to the grids driving the Tableau workbook. Bin centroids are plotted on an equirectangular projection anchored at 24.70&deg;N; distances are accurate to &lt;0.5% across this extent.
   <br><br>
-  <b>Known limitation, stated up front.</b> The datasets contain no subscriber or device identifier, so <em>"number of users"</em> cannot be measured directly. Everywhere this dashboard says "users" it is showing <b>measurement samples</b>, which is the honest crowdsourced proxy &mdash; a single heavy device can contribute thousands of samples. Ten handset models account for 57.4% of all validated samples, so device-level readings should be treated as indicative of those handsets in those locations, not as fleet-wide market share.
+  <b>Known limitation, stated up front.</b> The datasets contain no subscriber or device identifier, so <em>"number of users"</em> cannot be measured directly. Everywhere this dashboard says "users" it is showing <b>measurement samples</b>, which is the honest crowdsourced proxy: a single heavy device can contribute thousands of samples. Ten handset models account for 57.4% of all validated samples, so device-level readings should be treated as indicative of those handsets in those locations, not as fleet-wide market share.
   <br><br>
   <b>Mockup.</b> All figures are computed from the supplied datasets; map basemap is derived from the sample footprint itself rather than a tile service, so the file is fully self-contained and offline-safe. Every filter-row control is live: <b>My network</b> re-frames every comparison, <b>Date range</b> re-slices all 20 views against the weekend (Fri&ndash;Sat) or weekday (Sun&ndash;Mon) subset, and both data-treatment switches recompute the affected charts. The <b>Scope</b> chip is deliberately locked: RSRP is an LTE-only measurement, so 2G, 3G and Wi-Fi bearers are excluded by definition rather than offered as a filter that could return nothing.
 </div>
@@ -851,7 +851,7 @@ let DD = {};                // flattened view of the current slice + toggle stat
 
 /* One place decides what "current data" means. Every chart reads DD, so a
    change to any of the three controls above is a single call to refreshDD()
-   followed by renderAll() — no chart can be left behind. */
+   followed by renderAll(): no chart can be left behind. */
 function refreshDD(){
   const S = D.slices[SLICE];
   if(S.density && S.density.pts){ const d=S.density, out=[];
@@ -888,8 +888,8 @@ function refreshDD(){
 
 const cssv = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
 const opColor = o => cssv('--series-' + o);
-const num = (v,d=1) => (v==null||isNaN(v)) ? '—' : Number(v).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
-const int = v => (v==null||isNaN(v)) ? '—' : Math.round(v).toLocaleString('en-US');
+const num = (v,d=1) => (v==null||isNaN(v)) ? '–' : Number(v).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
+const int = v => (v==null||isNaN(v)) ? '–' : Math.round(v).toLocaleString('en-US');
 const compact = v => { const a=Math.abs(v);
   if(a>=1e9) return (v/1e9).toFixed(1).replace(/\.0$/,'')+'B';
   if(a>=1e6) return (v/1e6).toFixed(1).replace(/\.0$/,'')+'M';
@@ -906,7 +906,7 @@ const svgRoot = (w,h) => { const s=S('svg',{viewBox:`0 0 ${w} ${h}`,preserveAspe
 /* Charts sat in containers of different widths while using hardcoded viewBox widths,
    so an 11px label rendered anywhere between 11px and 24px depending on the card.
    Measuring the container and using it as the viewBox width pins every chart at
-   scale 1.0 — one type size across the whole dashboard. */
+   scale 1.0: one type size across the whole dashboard. */
 const chartW = (host, min=340) => Math.max(min, Math.round((host.clientWidth || host.getBoundingClientRect().width || 520)));
 
 /* --- colour ramps --- */
@@ -1049,7 +1049,7 @@ function computeMetrics(){
     M[o] = {
       rsrp: st.avg, med: st.med, p10: st.p10, p90: st.p90, n: st.n,
       // computed directly from the raw rows, NOT by summing already-rounded band
-      // percentages — summing two 1-dp values loses a tenth of a point.
+      // percentages: summing two 1-dp values loses a tenth of a point.
       usable: DD.pct['Operator '+o].usable,
       poor:   DD.pct['Operator '+o].poor,
       lte: DD.gen_mix[o]['4G'],
@@ -1057,7 +1057,7 @@ function computeMetrics(){
       dlMed: ts.dl_med, sentinel: DD.sentinel_4g[o]
     };
   });
-  // grid leadership — a cell is "contested" for operator o when o and at least one rival both have data there
+  // grid leadership: a cell is "contested" for operator o when o and at least one rival both have data there
   OPS.forEach(o=>{
     const cells = DD.gap_cells.filter(fairCell);   // as the map caption and the README say: every operator has 150+ samples in the cell
     let lead=0, sum=0;
@@ -1072,7 +1072,7 @@ const bestRival = (o,key) => Math.max(...rivalsOf(o).map(x=>M[x][key]));
 const bestRivalOp = (o,key) => rivalsOf(o).reduce((a,b)=> M[a][key]>=M[b][key]?a:b);
 
 /* ============================================================
-   3. PAGE 1 — BAN ROW
+   3. PAGE 1: BAN ROW
    ============================================================ */
 function deltaHTML(v, unit, goodIsUp, ref){
   const good = goodIsUp ? v>0 : v<0;
@@ -1128,7 +1128,7 @@ function renderArtifactCmp(){
       o=>DD.pct_adj['Operator '+o].poor - DD.pct_raw['Operator '+o].poor, ' pp', false],
     ['Excellent-coverage share', o=>num(DD.pct_raw['Operator '+o].exc,1)+'%', o=>num(DD.pct_adj['Operator '+o].exc,1)+'%',
       o=>DD.pct_adj['Operator '+o].exc - DD.pct_raw['Operator '+o].exc, ' pp', true],
-    ['Samples flagged as artefacts', o=>'—', o=>num(DD.flagged.per_op[o],1)+'%', o=>0, '', true]
+    ['Samples flagged as artefacts', o=>'–', o=>num(DD.flagged.per_op[o],1)+'%', o=>0, '', true]
   ];
   rows.forEach(([lab,raw,adj,dlt,unit,goodUp])=>{
     const d=dlt(HOME), cls = !unit ? '' : (goodUp? (d>0?'d-good':'d-bad') : (d<0?'d-good':'d-bad'));
@@ -1153,7 +1153,7 @@ function drawBanSpark(){
 }
 
 /* ============================================================
-   4. PAGE 1 — COMPETITIVE GAP MAP
+   4. PAGE 1: COMPETITIVE GAP MAP
    ============================================================ */
 let gapMap;
 // a cell is scored only when every operator has at least 150 samples there (the caption and the README rule): 306 cells
@@ -1199,7 +1199,7 @@ function renderGapMap(){
   const meanBehind = behind.length ? behind.reduce((s,r)=>s+r.gap,0)/behind.length : 0;
   const tieNote = tied ? ` (${tied} tied)` : '';
   $('#gapInsight').querySelector('p').innerHTML = M[HOME].gapMean < 0
-    ? `<b>${OPNAME[HOME]} is the weaker signal in ${behind.length} of ${rows.length} contested cells (${pct}%)</b>${tieNote}. Where we trail, we trail by <b>${num(meanBehind,1).replace('-','\u2212')} dB</b> on average; across every contested cell the balance is <b>${sgn(M[HOME].gapMean)} dB</b>. The single worst cell sits <b>${num(worst.gap,1).replace('-','\u2212')} dB</b> down at ${worst.la.toFixed(3)}, ${worst.lo.toFixed(3)} — a ${num(Math.abs(worst.gap),0)} dB deficit is roughly an order of magnitude of received power, and it is measured on ${int(worst.n)} of our own samples, so it is not a sampling artefact.`
+    ? `<b>${OPNAME[HOME]} is the weaker signal in ${behind.length} of ${rows.length} contested cells (${pct}%)</b>${tieNote}. Where we trail, we trail by <b>${num(meanBehind,1).replace('-','\u2212')} dB</b> on average; across every contested cell the balance is <b>${sgn(M[HOME].gapMean)} dB</b>. The single worst cell sits <b>${num(worst.gap,1).replace('-','\u2212')} dB</b> down at ${worst.la.toFixed(3)}, ${worst.lo.toFixed(3)}: a ${num(Math.abs(worst.gap),0)} dB deficit is roughly an order of magnitude of received power, and it is measured on ${int(worst.n)} of our own samples, so it is not a sampling artefact.`
     : `<b>${OPNAME[HOME]} leads in ${ahead} of ${rows.length} contested cells</b>${tieNote}, and across every contested cell the balance is <b>${sgn(M[HOME].gapMean)} dB</b> in our favour. Defend it: the ${behind.length} cells where we still trail lose by ${num(meanBehind,1).replace('-','\u2212')} dB on average.`;
 
   buildTable('#tblGap', ['Cell centroid','Our RSRP','Best rival','Rival','Gap (dB)','Our samples'],
@@ -1210,12 +1210,12 @@ function renderGapMap(){
   buildTable('#tblAction', ['#','Cell centroid','Our RSRP','Best rival RSRP','Deficit','Our samples','Recommended action'],
     act.map((r,i)=>[ i+1, r.la.toFixed(4)+', '+r.lo.toFixed(4), num(r.mine,1).replace('-','−')+' dBm',
       num(r.best,1).replace('-','−')+' dBm ('+r.bestOp+')', num(r.gap,1).replace('-','−')+' dB', int(r.n),
-      r.gap<-15 ? 'Site audit — suspected coverage hole or down-tilt error' :
-      r.gap<-8  ? 'RF optimisation — tilt / azimuth / power rebalance' : 'Monitor — small-cell candidate' ]));
+      r.gap<-15 ? 'Site audit: suspected coverage hole or down-tilt error' :
+      r.gap<-8  ? 'RF optimisation: tilt / azimuth / power rebalance' : 'Monitor: small-cell candidate' ]));
 }
 
 /* ============================================================
-   5. PAGE 1 — COVERAGE BAND MIX (100% stacked)
+   5. PAGE 1: COVERAGE BAND MIX (100% stacked)
    ============================================================ */
 function renderBands(){
   const host=$('#bandChart'); host.innerHTML='';
@@ -1252,7 +1252,7 @@ function renderBands(){
 }
 
 /* ============================================================
-   6. PAGE 1 — RSRP HISTOGRAM
+   6. PAGE 1: RSRP HISTOGRAM
    ============================================================ */
 let histOff = new Set();
 function renderHist(){
@@ -1300,7 +1300,7 @@ function renderHist(){
 }
 
 /* ============================================================
-   7. PAGE 1 — HOURLY CHARTS
+   7. PAGE 1: HOURLY CHARTS
    ============================================================ */
 function lineChart(hostSel, legendSel, series, opt){
   const host=$(hostSel); host.innerHTML='';
@@ -1352,12 +1352,12 @@ function renderHourly(){
   lineChart('#hourRsrpChart','#hourRsrpLegend', mk('avg'), {label:'Mean RSRP by hour', fmtY:v=>num(v,0).replace('-','−'), fmtT:v=>num(v,1).replace('-','−')+' dBm', shade:[[7,9],[16,19]]});
   buildTable('#tblHour',['Hour',...OPS.flatMap(o=>[OPNAME[o]+' RSRP',OPNAME[o]+' samples'])],
     Array.from({length:24},(_,h)=>[String(h).padStart(2,'0')+':00',
-      ...OPS.flatMap(o=>{const r=DD.hourly.find(x=>x.op===o&&x.h===h); return r?[num(r.avg,1).replace('-','−'),int(r.n)]:['—','—'];})]));
+      ...OPS.flatMap(o=>{const r=DD.hourly.find(x=>x.op===o&&x.h===h); return r?[num(r.avg,1).replace('-','−'),int(r.n)]:['–','–'];})]));
 }
 </script>
 <script>
 /* ============================================================
-   8. PAGE 2 · CHART 1 — TIME-LAPSE DENSITY MAP
+   8. PAGE 2 · CHART 1: TIME-LAPSE DENSITY MAP
    ============================================================ */
 let densMap, curHour=8, playing=false, playTimer=null;
 const DENS_BY_H = {}; let DENS_MAX=1, DENS_CAP=1;
@@ -1392,25 +1392,25 @@ function renderDensity(){
   };
   densMap.render();
   renderHourStrip();
-  // computed, never hardcoded — the export threshold and the date slice both move these
+  // computed, never hardcoded: the export threshold and the date slice both move these
   const perHour=Array.from({length:24},(_,h)=>({h, cells:(DENS_BY_H[h]||[]).length,
                                                 n:(DENS_BY_H[h]||[]).reduce((s,x)=>s+x.n,0)}));
   const lo=perHour.reduce((a,b)=>b.cells<a.cells?b:a), hi=perHour.reduce((a,b)=>b.cells>a.cells?b:a);
   const hh=v=>String(v).padStart(2,'0')+':00';
   $('#densInsight').querySelector('p').innerHTML =
-    `<b>${hh(lo.h)} is the quietest hour and ${hh(hi.h)} the busiest</b> — ${int(lo.cells)} active cells against ${int(hi.cells)}, a swing of ${num(hi.cells/Math.max(1,lo.cells),1)}× across the day. `+
+    `<b>${hh(lo.h)} is the quietest hour and ${hh(hi.h)} the busiest</b>: ${int(lo.cells)} active cells against ${int(hi.cells)}, a swing of ${num(hi.cells/Math.max(1,lo.cells),1)}× across the day. `+
     `Activity spreads out of the residential east and north into the central business spine through the morning, then reverses after 22:00 toward retail corridors. This is the demand curve any capacity plan has to serve.`;
   buildTable('#tblDensity',['Hour','Active cells','Samples','Busiest cell','Peak cell samples'],
     Array.from({length:24},(_,h)=>{ const rr=DENS_BY_H[h]||[]; const top=rr.slice().sort((a,b)=>b.n-a.n)[0];
       return [String(h).padStart(2,'0')+':00', int(rr.length), int(rr.reduce((s,r)=>s+r.n,0)),
-        top?top.la.toFixed(3)+', '+top.lo.toFixed(3):'—', top?int(top.n):'—']; }));
+        top?top.la.toFixed(3)+', '+top.lo.toFixed(3):'–', top?int(top.n):'–']; }));
 }
 function renderHourStrip(){
   const host=$('#hourStrip'); host.innerHTML='';
   const W=chartW(host),H=56,B=16;
   const vals=Array.from({length:24},(_,h)=>(DENS_BY_H[h]||[]).reduce((s,r)=>s+r.n,0));
   const mx=Math.max(...vals);
-  const svg=svgRoot(W,H); svg.setAttribute('aria-label','Total samples per hour — click to scrub');
+  const svg=svgRoot(W,H); svg.setAttribute('aria-label','Total samples per hour: click to scrub');
   const bw=(W-8)/24;
   vals.forEach((v,h)=>{
     const bh=Math.max(2,v/mx*(H-B-6));
@@ -1439,7 +1439,7 @@ function togglePlay(){
 }
 
 /* ============================================================
-   9. PAGE 2 · CHART 2 — RSRP HEAT MAP
+   9. PAGE 2 · CHART 2: RSRP HEAT MAP
    ============================================================ */
 let heatMap;
 function renderHeat(){
@@ -1472,15 +1472,15 @@ function renderHeat(){
   const share = rows.length? rows.filter(c=>c.v<-95).length/rows.length*100 : 0;
   $('#heatInsight').className='insight '+(share>18?'crit':share>10?'warn':'good');
   $('#heatInsight').querySelector('p').innerHTML = op==='ALL'
-    ? `Across all three networks, <b>${num(share,1)}% of populated cells sit below the −95 dBm service threshold</b>. Overlaying operators hides who owns each hole — switch the dropdown to isolate a network.`
-    : `<b>${OPNAME[op]}: ${num(share,1)}% of its ${int(rows.length)} populated cells fall below −95 dBm.</b> The weakest is ${worst[0]?worst[0].la.toFixed(3)+', '+worst[0].lo.toFixed(3)+' at '+num(worst[0].v,1).replace('-','−')+' dBm':'—'}. Below −95 dBm an LTE handset is at cell edge: throughput collapses, retransmissions climb, and battery drain becomes the customer-visible symptom long before the user thinks to complain about "signal".`;
+    ? `Across all three networks, <b>${num(share,1)}% of populated cells sit below the −95 dBm service threshold</b>. Overlaying operators hides who owns each hole: switch the dropdown to isolate a network.`
+    : `<b>${OPNAME[op]}: ${num(share,1)}% of its ${int(rows.length)} populated cells fall below −95 dBm.</b> The weakest is ${worst[0]?worst[0].la.toFixed(3)+', '+worst[0].lo.toFixed(3)+' at '+num(worst[0].v,1).replace('-','−')+' dBm':'–'}. Below −95 dBm an LTE handset is at cell edge: throughput collapses, retransmissions climb, and battery drain becomes the customer-visible symptom long before the user thinks to complain about "signal".`;
   buildTable('#tblHeat',['Cell centroid','Mean RSRP (dBm)','Band','Samples'],
     worst.slice(0,60).map(c=>[c.la.toFixed(4)+', '+c.lo.toFixed(4), num(c.v,1).replace('-','−'),
       c.v>=-80?'Excellent':c.v>=-90?'Good':c.v>=-100?'Fair':c.v>=-110?'Poor':'Very poor', int(c.n)]));
 }
 
 /* ============================================================
-   10. PAGE 2 · CHART 3 — TRAFFIC BUBBLE MAP
+   10. PAGE 2 · CHART 3: TRAFFIC BUBBLE MAP
    ============================================================ */
 let bubMap, bubOff=new Set(), bubDir='D';
 const RES_LABEL={0:['6','2 km bin'],1:['7','1 km bin'],2:['8','500 m bin']};
@@ -1524,13 +1524,13 @@ function renderBubbles(){
   const top=rows[0];
   const homeShare = rows.filter(r=>r.op===HOME).reduce((s,r)=>s+r.t,0)/tot*100;
   $('#bubInsight').querySelector('p').innerHTML =
-    `<b>Traffic is far more concentrated than coverage.</b> The single busiest ${lab} carries ${gb(top.t)} — ${num(top.t/tot*100,1)}% of everything measured — and the top 10 bins carry ${num(rows.slice(0,10).reduce((s,r)=>s+r.t,0)/tot*100,0)}%. ${OPNAME[HOME]} takes ${num(homeShare,0)}% of measured city downlink. Capacity money follows this map; coverage money follows the heat map next to it, and <em>they point at different places</em>.`;
+    `<b>Traffic is far more concentrated than coverage.</b> The single busiest ${lab} carries ${gb(top.t)} (${num(top.t/tot*100,1)}% of everything measured), and the top 10 bins carry ${num(rows.slice(0,10).reduce((s,r)=>s+r.t,0)/tot*100,0)}%. ${OPNAME[HOME]} takes ${num(homeShare,0)}% of measured city downlink. Capacity money follows this map; coverage money follows the heat map next to it, and <em>they point at different places</em>.`;
   buildTable('#tblBubble',['Rank','Bin centroid','Operator','Volume','Samples','Share'],
     rows.slice(0,60).map((r,i)=>[i+1, r.la.toFixed(4)+', '+r.lo.toFixed(4), OPNAME[r.op], gb(r.t), int(r.n), num(r.t/tot*100,2)+'%']));
 }
 
 /* ============================================================
-   11. PAGE 2 · CHART 4 — DEVICE BAR CHART
+   11. PAGE 2 · CHART 4: DEVICE BAR CHART
    ============================================================ */
 let devOff=new Set();
 function renderDevices(){
@@ -1543,7 +1543,7 @@ function renderDevices(){
   byDev.sort(sort==='vol' ? (a,b)=>b.vol-a.vol : sort==='best' ? (a,b)=>b.best-a.best : (a,b)=>a.worst-b.worst);
   const show=byDev.slice(0,12);          // the chart draws these, and only these
   const host=$('#devChart'); host.innerHTML='';
-  if(!show.length){ host.innerHTML='<p style="color:var(--text-muted);font-size:12.5px;padding:20px 0">No handset model has that many samples on the selected networks — lower the threshold.</p>';
+  if(!show.length){ host.innerHTML='<p style="color:var(--text-muted);font-size:12.5px;padding:20px 0">No handset model has that many samples on the selected networks: lower the threshold.</p>';
     $('#devLegend').innerHTML=''; return; }
   const allV=show.flatMap(g=>g.rs.map(r=>r[agg]));
   const lo=Math.min(...allV,-100), hi=Math.max(...allV,-60);
@@ -1589,13 +1589,13 @@ function renderDevices(){
   host.appendChild(svg);
   $('#devLegend').innerHTML = OPS.map(o=>
     `<span class="item ${devOff.has(o)?'off':''}" data-op="${o}"><span class="key sq" style="background:${opColor(o)}"></span>${OPNAME[o]}</span>`).join('')
-    + `<span style="font-size:11.5px;color:var(--text-muted);margin-left:auto">Bars grow from ${String(AXMIN).replace('-','−')} dBm — longer is better</span>`;
+    + `<span style="font-size:11.5px;color:var(--text-muted);margin-left:auto">Bars grow from ${String(AXMIN).replace('-','−')} dBm: longer is better</span>`;
   $$('#devLegend .item').forEach(it=>it.onclick=()=>{const o=it.dataset.op; devOff.has(o)?devOff.delete(o):devOff.add(o); if(devOff.size===3) devOff.delete(o); renderDevices();});
   // ---- Insight -------------------------------------------------------------
   // Two safeguards, both learned the hard way:
   //   1. Only models actually drawn are eligible (a caption naming an off-chart
   //      model is a bug).
-  //   2. A raw A-vs-B average for one model is NOT a network comparison — the two
+  //   2. A raw A-vs-B average for one model is NOT a network comparison: the two
   //      operators' readings usually come from different places at different hours.
   //      We only make the causal claim from a LOCATION-MATCHED delta: the same model,
   //      the same 1.4 km tile, both operators, >=20 readings each side.
@@ -1610,24 +1610,24 @@ function renderDevices(){
   const unmatched = cand.filter(c=>!c.m);
   const w = matched[0];
   const hidden = byDev.length - show.length;
-  const tail = hidden>0 ? ` <span style="color:var(--text-muted)">${hidden} further model${hidden>1?'s':''} pass the threshold but are not charted — open the table for the full list.</span>` : '';
+  const tail = hidden>0 ? ` <span style="color:var(--text-muted)">${hidden} further model${hidden>1?'s':''} pass the threshold but are not charted: open the table for the full list.</span>` : '';
   $('#devInsight').className = 'insight ' + (w ? (w.m.d<-5?'crit':(w.m.d>0?'good':'info')) : 'warn');
   if(w){
     const behind = w.m.d < 0, mag = Math.abs(w.m.d);
     const naiveNote = Math.abs(w.naive - w.m.d) >= 2
-      ? ` Read straight off the coloured bars the gap would look like ${sgn(w.naive)} dB — the rest of that is where each operator happened to be measured, not the network.`
+      ? ` Read straight off the coloured bars the gap would look like ${sgn(w.naive)} dB: the rest of that is where each operator happened to be measured, not the network.`
       : '';
     const weight = mag >= 5
       ? (behind ? ' A gap that size on identical hardware is grid geometry, not the radio in the phone.'
                 : ' A lead that size on identical hardware is our grid doing its job.')
-      : ' The gap is small enough to sit inside normal cell-to-cell variation — worth watching, not worth a site visit.';
+      : ' The gap is small enough to sit inside normal cell-to-cell variation: worth watching, not worth a site visit.';
     $('#devInsight').querySelector('p').innerHTML =
-      `<b>${esc(w.d)} is the widest like-for-like gap among the ${show.length} models charted: ${sgn(w.m.d)} dB ${behind?'behind':'ahead of'} ${OPNAME[w.rival.op]}</b> — same handset, same ${w.m.t} shared 1&nbsp;km cell${w.m.t>1?'s':''}, ${int(w.m.n)} paired readings, so geography is held constant and only the network differs.${weight}${naiveNote}`
-      + (unmatched.length ? ` <span style="color:var(--text-muted)">${unmatched.length} of the ${show.length} charted models cannot be compared this way at all — the operators never measured them in the same tile.</span>` : '')
+      `<b>${esc(w.d)} is the widest like-for-like gap among the ${show.length} models charted: ${sgn(w.m.d)} dB ${behind?'behind':'ahead of'} ${OPNAME[w.rival.op]}</b>: same handset, same ${w.m.t} shared 1&nbsp;km cell${w.m.t>1?'s':''}, ${int(w.m.n)} paired readings, so geography is held constant and only the network differs.${weight}${naiveNote}`
+      + (unmatched.length ? ` <span style="color:var(--text-muted)">${unmatched.length} of the ${show.length} charted models cannot be compared this way at all: the operators never measured them in the same tile.</span>` : '')
       + tail;
   } else {
     $('#devInsight').querySelector('p').innerHTML =
-      `<b>No network-vs-network claim can be made from these ${show.length} models.</b> For each one, ${OPNAME[HOME]} and its rivals measured the handset in different places — there is no 1&nbsp;km cell where both recorded it with enough readings to compare. `
+      `<b>No network-vs-network claim can be made from these ${show.length} models.</b> For each one, ${OPNAME[HOME]} and its rivals measured the handset in different places: there is no 1&nbsp;km cell where both recorded it with enough readings to compare. `
       + `The differences you can see between the coloured bars above are therefore differences in <em>where the phones were</em>, not in the networks. Raise the sample threshold until models with real overlap appear.${tail}`;
   }
   buildTable('#tblDev',['Model','Manufacturer','Operator','Samples','Avg','Min','Max','P90','P10'],
@@ -1638,7 +1638,7 @@ function renderDevices(){
 </script>
 <script>
 /* ============================================================
-   12. PAGE 3 — COVERAGE vs CONSUMPTION SCATTER
+   12. PAGE 3: COVERAGE vs CONSUMPTION SCATTER
    ============================================================ */
 function renderCorr(){
   const host=$('#corrChart'); host.innerHTML='';
@@ -1685,7 +1685,7 @@ function renderCorr(){
     `<b>R&sup2; = ${num(DD.corr_r2,4)}.</b> Coverage explains essentially none of the variation in how much
      data a cell carries, once volume is expressed per 1,000 measurements. The raw correlation between RSRP and total
      downlink is an artefact of population density: busy places attract both traffic and capacity. Normalising by sample
-     count removes that, and the relationship goes with it — the fixed-effects analysis on the Forecast &amp; Impact page
+     count removes that, and the relationship goes with it: the fixed-effects analysis on the Forecast &amp; Impact page
      reaches the same conclusion by a different route.`;
   buildTable('#tblCorr',['Cell centroid','Mean RSRP','GB per 1k samples','RSRP samples'],
     rows.slice().sort((a,b)=>b.gb-a.gb).slice(0,60).map(r=>[r.la.toFixed(4)+', '+r.lo.toFixed(4),
@@ -1693,7 +1693,7 @@ function renderCorr(){
 }
 
 /* ============================================================
-   13. PAGE 3 — HOTSPOT LEADERBOARD
+   13. PAGE 3: HOTSPOT LEADERBOARD
    ============================================================ */
 function renderHotspots(){
   buildTable('#tblHot',['#','Cell centroid','Downlink','Leader','Leader share','Samples'],
@@ -1702,7 +1702,7 @@ function renderHotspots(){
 }
 
 /* ============================================================
-   14. PAGE 3 — MANUFACTURER BENCHMARK (dot + range)
+   14. PAGE 3: MANUFACTURER BENCHMARK (dot + range)
    ============================================================ */
 function renderManuf(){
   const host=$('#manufChart'); host.innerHTML='';
@@ -1743,7 +1743,7 @@ function renderManuf(){
 }
 
 /* ============================================================
-   15. PAGE 3 — MODEL × OPERATOR MATRIX
+   15. PAGE 3: MODEL × OPERATOR MATRIX
    ============================================================ */
 function renderMatrix(){
   const host=$('#matrixChart'); host.innerHTML='';
@@ -1787,7 +1787,7 @@ function renderMatrix(){
   });
   host.appendChild(svg);
   $('#matrixRamp').style.background=cssRamp([-100,-95,-90,-85,-80,-75,-70].map(v=>col(v)));
-  // The naive row spread is NOT a network comparison — see the device chart note.
+  // The naive row spread is NOT a network comparison: see the device chart note.
   // Only quote a swing that survives location matching.
   const cands=names.map(d=>{
     const v=OPS.map(o=>DD.devices.find(r=>r.d===d&&r.op===o)).filter(Boolean);
@@ -1812,11 +1812,11 @@ function renderMatrix(){
   buildTable('#tblMatrix',['Model','Op A','Op B','Op C','Spread (dB)'],
     names.map(d=>{const v=OPS.map(o=>DD.devices.find(r=>r.d===d&&r.op===o));
       const p=v.filter(Boolean).map(r=>r.avg);
-      return [d,...v.map(r=>r?num(r.avg,1).replace('-','−'):'—'), p.length>1?num(Math.max(...p)-Math.min(...p),1):'—'];}));
+      return [d,...v.map(r=>r?num(r.avg,1).replace('-','−'):'–'), p.length>1?num(Math.max(...p)-Math.min(...p),1):'–'];}));
 }
 
 /* ============================================================
-   16. PAGE 3 — TRAFFIC BY HOUR, DL:UL, OUTLIERS, FUNNEL
+   16. PAGE 3: TRAFFIC BY HOUR, DL:UL, OUTLIERS, FUNNEL
    ============================================================ */
 function renderTrafficHour(){
   const series=OPS.map(o=>({name:OPNAME[o]+(o===HOME?' (us)':''),color:opColor(o),wide:o===HOME,
@@ -1853,7 +1853,7 @@ function renderDlUl(){
   host.appendChild(svg);
   const med=rows.map(r=>r.ratio_med);
   $('#dlulInsight').querySelector('p').innerHTML =
-    `All three networks sit within <b>${num(Math.min(...med),1)}–${num(Math.max(...med),1)}\u00d7 median downlink:uplink</b> — a consistent consumption profile. So the spread in <em>total</em> DL:UL (${rows.map(r=>'Op '+r.op+' '+num(CLEAN?r.ratio_sum_clean:r.ratio_sum,1)+'\u00d7').join(', ')}) comes from a handful of heavy sessions, not from different user behaviour.`;
+    `All three networks sit within <b>${num(Math.min(...med),1)}–${num(Math.max(...med),1)}\u00d7 median downlink:uplink</b>: a consistent consumption profile. So the spread in <em>total</em> DL:UL (${rows.map(r=>'Op '+r.op+' '+num(CLEAN?r.ratio_sum_clean:r.ratio_sum,1)+'\u00d7').join(', ')}) comes from a handful of heavy sessions, not from different user behaviour.`;
 }
 function renderOutlier(){
   const host=$('#outlierChart'); host.innerHTML='';
@@ -1899,13 +1899,13 @@ function renderFunnel(){
 }
 function renderDqList(){
   const items=[
-    ['critical','Sentinel values', `<b>${num(D.dq.extra.sentinel_share_overall,1)}%</b> of raw RSRP rows = 2,147,483,647. Even inside 4G-only rows it persists at ${OPS.map(o=>'Op '+o+' '+num(DD.sentinel_4g[o],1)+'%').join(' · ')} — a genuine "handset could not read a serving cell" signal, and itself a coverage KPI worth tracking.`],
-    ['warning','Malformed timestamps', `<b>80 rows</b> in TrafficVolume.csv carry times like <code>45:00.0</code> — Excel truncation on export. Dropped (0.06% of the file); the fix belongs upstream in the extract, not here.`],
+    ['critical','Sentinel values', `<b>${num(D.dq.extra.sentinel_share_overall,1)}%</b> of raw RSRP rows = 2,147,483,647. Even inside 4G-only rows it persists at ${OPS.map(o=>'Op '+o+' '+num(DD.sentinel_4g[o],1)+'%').join(' · ')}: a genuine "handset could not read a serving cell" signal, and itself a coverage KPI worth tracking.`],
+    ['warning','Malformed timestamps', `<b>80 rows</b> in TrafficVolume.csv carry times like <code>45:00.0</code>: Excel truncation on export. Dropped (0.06% of the file); the fix belongs upstream in the extract, not here.`],
     ['warning','Manufacturer casing', `<code>samsung</code> / <code>Samsung</code>, <code>LENOVO</code> / <code>Lenovo</code> / <code>lenovo</code>, <code>HTC</code> / <code>htc</code>, <code>Realme</code> / <code>realme</code> would each split into separate bars if grouped naively. Canonicalised before aggregation.`],
     ['warning','Wrong-technology rows', `RSRP is an LTE-only measurement, yet <b>450k rows</b> are labelled 2G/3G/Unknown and 96–100% of those carry the sentinel. Keeping them would have silently biased every operator average.`],
-    ['serious','Null country', `<b>${D.dq.extra.null_country} rows</b> have no Country value but valid Riyadh coordinates — retained, since geography is what we filter on.`],
-    ['serious','No subscriber identifier', `Neither file has a user or device ID, so "users" is unmeasurable. The top 10 handset models produce <b>${num(D.dq.extra.top10_device_share,1)}%</b> of all validated samples and Samsung alone <b>${num(D.dq.extra.samsung_share,1)}%</b> — sample counts are a volume proxy, never a subscriber count.`],
-    ['serious','Window is 3 days, not a week', `Timestamps span <b>1–4 Nov 2019</b> (Fri–Mon). Fri/Sat is the Saudi weekend, so only two weekdays are represented — enough for a diurnal profile, not for a weekly seasonality model.`]
+    ['serious','Null country', `<b>${D.dq.extra.null_country} rows</b> have no Country value but valid Riyadh coordinates: retained, since geography is what we filter on.`],
+    ['serious','No subscriber identifier', `Neither file has a user or device ID, so "users" is unmeasurable. The top 10 handset models produce <b>${num(D.dq.extra.top10_device_share,1)}%</b> of all validated samples and Samsung alone <b>${num(D.dq.extra.samsung_share,1)}%</b>: sample counts are a volume proxy, never a subscriber count.`],
+    ['serious','Window is 3 days, not a week', `Timestamps span <b>1–4 Nov 2019</b> (Fri–Mon). Fri/Sat is the Saudi weekend, so only two weekdays are represented: enough for a diurnal profile, not for a weekly seasonality model.`]
   ];
   const host=$('#dqList'); host.innerHTML='';
   items.forEach(([sev,t,b])=>{
@@ -1983,10 +1983,10 @@ function renderTakeaways(){
   const act = gapData().filter(r=>r.gap<0).map(r=>({...r,score:Math.abs(r.gap)*Math.log10(r.n)})).sort((a,b)=>b.score-a.score).slice(0,8);
   const dLo=Math.min(...act.map(r=>Math.abs(r.gap))), dHi=Math.max(...act.map(r=>Math.abs(r.gap)));
   const cards=[
-    ['crit','Coverage is our structural gap', `We average <b>${num(M[h].rsrp,1).replace('-','−')} dBm</b> against ${OPNAME[br]}'s ${num(M[br].rsrp,1).replace('-','−')}, and we are the weaker signal in <b>${Math.round((1-M[h].lead/M._contested)*100)}%</b> of contested cells. ${num(M[h].poor,1)}% of our samples sit below −100 dBm — ${num(M[h].poor/M[bp].poor,1)}× ${OPNAME[bp]}'s exposure. This is the number that shows up later as churn.`],
-    ['warn','The fix is surgical, not city-wide', `The deficit is not uniform: the worst 8 cells carry deficits of <b>${num(dLo,0)}–${num(dHi,0)} dB</b> while the median contested cell is within a few dB. Fixing those 8 &mdash; roughly <b>${num(act.length*5.2,0)} km²</b> of a &gt;1,000 km² measured footprint &mdash; closes most of the visible gap. Start with tilt and azimuth audits before capex.`],
-    ['info','Handsets exonerate the fleet', `Nokia/HMD and Lenovo devices read 6–10 dB below Huawei and Xiaomi on <em>every</em> network — that is antenna design, not our grid. But the ${DD.devices.length?'same-model':'—'} cross-operator spreads of 10–20 dB on identical Galaxy hardware are ours to explain.`],
-    ['crit','Coverage does not convert to volume', `Cell-level RSRP explains <b>R&sup2; = ${num(DD.corr_r2,4)}</b> of the variation in downlink per 1,000 measurements. Coverage and consumption are not linked once population density is removed, so the capacity case and the coverage case need separate justification &mdash; and the traffic model gains nothing from an RSRP feature.`],
+    ['crit','Coverage is our structural gap', `We average <b>${num(M[h].rsrp,1).replace('-','−')} dBm</b> against ${OPNAME[br]}'s ${num(M[br].rsrp,1).replace('-','−')}, and we are the weaker signal in <b>${Math.round((1-M[h].lead/M._contested)*100)}%</b> of contested cells. ${num(M[h].poor,1)}% of our samples sit below −100 dBm: ${num(M[h].poor/M[bp].poor,1)}× ${OPNAME[bp]}'s exposure. This is the number that shows up later as churn.`],
+    ['warn','The fix is surgical, not city-wide', `The deficit is not uniform: the worst 8 cells carry deficits of <b>${num(dLo,0)}–${num(dHi,0)} dB</b> while the median contested cell is within a few dB. Fixing those 8: roughly <b>${num(act.length*5.2,0)} km²</b> of a &gt;1,000 km² measured footprint: closes most of the visible gap. Start with tilt and azimuth audits before capex.`],
+    ['info','Handsets exonerate the fleet', `Nokia/HMD and Lenovo devices read 6–10 dB below Huawei and Xiaomi on <em>every</em> network: that is antenna design, not our grid. But the ${DD.devices.length?'same-model':'–'} cross-operator spreads of 10–20 dB on identical Galaxy hardware are ours to explain.`],
+    ['crit','Coverage does not convert to volume', `Cell-level RSRP explains <b>R&sup2; = ${num(DD.corr_r2,4)}</b> of the variation in downlink per 1,000 measurements. Coverage and consumption are not linked once population density is removed, so the capacity case and the coverage case need separate justification: and the traffic model gains nothing from an RSRP feature.`],
     ['warn','Traffic and coverage point elsewhere', `The top 10 traffic bins carry a disproportionate share of city downlink, and they are <em>not</em> the worst-coverage bins. Capacity spend and coverage spend need separate maps and separate budgets.`],
     ['crit','Half our "coverage problem" is a measurement problem', `Six handset/network combinations report quantised RSRP; on our network they are <b>${num(DD.flagged.per_op[h],1)}%</b> of samples. Correcting for them moves our mean from ${num(DD.op_stats['Operator '+h].avg,1).replace('-','−')} to <b>${num(DD.op_stats_adj['Operator '+h].avg,1).replace('-','−')} dBm</b> and poor exposure from ${num(DD.bands['Operator '+h].Poor+DD.bands['Operator '+h]['Very Poor'],1)}% to <b>${num(DD.bands_adj['Operator '+h].Poor+DD.bands_adj['Operator '+h]['Very Poor'],1)}%</b>. A further 7.5% of rows are SDK alias duplicates. Fix the pipeline before signing off any capex on these numbers.`],
     ['crit','Trust the medians, not the totals', `14 downlink rows of ~104 GB inflate one operator's total <b>4.1×</b>. Any report built on <code>SUM(TrafficVolume)</code> without an outlier rule will rank the market wrongly. Every total on this dashboard is outlier-suppressed by default and the toggle is in the filter bar.`]
@@ -2021,7 +2021,7 @@ function renderAll(){
 }
 
 /* ============================================================
-   PAGE 4 — FORECAST & IMPACT
+   PAGE 4: FORECAST & IMPACT
    ============================================================ */
 let fcDir='D';
 function p4dir(){ return fcDir; }
@@ -2076,13 +2076,13 @@ function renderP4(){
   $('#fcLegend').innerHTML=
     `<span class="item"><span class="key" style="background:${opColor(o)}"></span>${OPNAME[o]} observed</span>`+
     `<span class="item"><span class="key" style="background:${opColor(o)};opacity:.45"></span>Forecast &middot; 80% interval</span>`+
-    `<span class="item" style="cursor:pointer" id="fcToggle"><span class="key sq" style="background:var(--seq-450)"></span>${d==='D'?'Downlink':'Uplink'} &mdash; click to switch</span>`;
+    `<span class="item" style="cursor:pointer" id="fcToggle"><span class="key sq" style="background:var(--seq-450)"></span>${d==='D'?'Downlink':'Uplink'}: click to switch</span>`;
   $('#fcToggle').onclick=()=>{ fcDir = fcDir==='D'?'U':'D'; renderP4(); };
   const width=(fpt[0].hi-fpt[0].lo)/Math.max(fpt[0].y,1e-9);
   $('#fcInsight').querySelector('p').innerHTML =
     `<b>${OPNAME[o]} is forecast to carry ${num(fcGB,1)} GB of ${d==='D'?'downlink':'uplink'} over the next 24 hours</b>, `+
     `${chg>=0?'up':'down'} ${num(Math.abs(chg),1)}% on the last observed day. The 80% interval spans roughly `+
-    `${num(width,1)}× the central estimate at the first forecast hour &mdash; three days of history cannot support a tighter claim, `+
+    `${num(width,1)}× the central estimate at the first forecast hour: three days of history cannot support a tighter claim, `+
     `and a forecast that hid that would be worse than useless for capacity planning.`;
 
   // ---- trend table ----------------------------------------------------------
@@ -2096,7 +2096,7 @@ function renderP4(){
        smallest p-value is ${num(Math.min(...P2.trend.map(r=>r.p)),3)}. Over three days that is the expected result: what looks
        like growth or decline is the day-of-week pattern, not a trajectory. Any capacity plan that extrapolates a trend from
        this window is extrapolating noise.`
-    : `<b>${sig} of 6 series show a significant daily trend.</b> Treat with care — three days is a very short base.`;
+    : `<b>${sig} of 6 series show a significant daily trend.</b> Treat with care: three days is a very short base.`;
 
   // ---- coverage-uplift effects ---------------------------------------------
   buildTable('#tblEff',['Metric','Specification','Cells','Effect per 10 dB (95% CI)','p'],
@@ -2138,7 +2138,7 @@ function renderP4(){
   const cards=[
     ['info','A usable next-day forecast exists',
      `SARIMA beats the seasonal-naive benchmark by <b>${num((1-mase/sn)*100,0)}%</b> (MASE ${num(mase,2)}) over a full day ahead,
-      and beats naive, Holt-Winters, gradient boosting and Prophet on both horizons. The daily shape is strong and stable —
+      and beats naive, Holt-Winters, gradient boosting and Prophet on both horizons. The daily shape is strong and stable:
       that is what the model is capturing.`],
     ['warn','But only the shape, not the level',
      `The 80% interval is roughly ${num(width,1)}× the central estimate. With 72 observations there is no way to narrow it
@@ -2150,7 +2150,7 @@ function renderP4(){
       justified by quality of experience and churn, not by a traffic uplift this data cannot demonstrate.`],
     ['good','What the study area does show',
      `Across the polygon the three networks differ by <b>${num(Math.max(...P2.poly.map(r=>r.rsrp_mean))-Math.min(...P2.poly.map(r=>r.rsrp_mean)),1)} dB</b>
-      in mean RSRP on ${int(P2.poly.reduce((s,r)=>s+r.rsrp_samples,0))} samples. That gap is real and measurable — it is the
+      in mean RSRP on ${int(P2.poly.reduce((s,r)=>s+r.rsrp_samples,0))} samples. That gap is real and measurable: it is the
       <em>consequence</em> of the gap for traffic that the data cannot pin down.`],
     ['warn','Three days is the binding constraint',
      `No weekly seasonality, no trend identification, no holiday effects. Every limitation on this page traces back to the
